@@ -11,8 +11,8 @@ public class DbConnection {
 	private static String HOST = "localhost";
 	private static String PASSWORD = "projects";
 	private static int PORT = 3306;
-	private static String SCHEMA = "projects";
-	private static String USER = "projects";
+	private static String SCHEMA = "projectWeek8";
+	private static String USER = "projectWeek8";
 	
 	public static Connection getConnection() {
 		String uri = String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s",//connection string
