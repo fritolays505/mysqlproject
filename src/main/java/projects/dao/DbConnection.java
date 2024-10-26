@@ -11,7 +11,7 @@ public class DbConnection {
 	private static String HOST = "localhost";
 	private static String PASSWORD = "projects";
 	private static int PORT = 3306;
-	private static String SCHEMA = "projectWeek8";
+	private static String SCHEMA = "projects";
 	private static String USER = "projectWeek8";
 	
 	public static Connection getConnection() {

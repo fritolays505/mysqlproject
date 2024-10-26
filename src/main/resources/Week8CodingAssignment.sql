@@ -1,5 +1,5 @@
 drop table if exists project_category;
-drop table if exists categorymaterial;
+drop table if exists category;
 drop table if exists step;
 drop table if exists material;
 drop table if exists project;
@@ -42,6 +42,6 @@ create table project_category (
 	project_id int not null,
 	category_id int not null,
 	foreign key (project_id) references project (project_id) on delete cascade,
-	foreign key (category_id) reference category (category_id) on delete cascade,
+	foreign key (category_id) references category (category_id) on delete cascade,
 	unique key (project_id, category_id)
 );
